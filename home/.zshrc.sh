@@ -13,9 +13,10 @@ source "$curr/terminal/highlight.sh"
 autoload -U colors && colors
 
 # Load and execute the prompt theming system.
-fpath=("$curr/terminal" $fpath)
-autoload -Uz promptinit && promptinit
-prompt 'paulmillr'
+fpath+=('/usr/local/lib/node_modules/pure-prompt/functions')
+autoload -Uz promptinit
+promptinit
+prompt pure
 
 path=(/usr/local/opt/ruby/bin $HOME/.cargo/bin $path) # changing .zshenv doesn't work
 export GPG_TTY=$(tty) # For git commit signing
@@ -23,6 +24,10 @@ export GPG_TTY=$(tty) # For git commit signing
 # ==================================================================
 # = Aliases =
 # ==================================================================
+# custom aliases
+alias permission='sudo chown -R $USER'
+alias g-br-clear="git br -vv | grep gone | sed | cut -f 3 -d ' ' | xargs -n 1 git br -D"
+
 # Simple clear command.
 alias cl='clear'
 

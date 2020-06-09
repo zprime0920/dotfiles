@@ -1,18 +1,42 @@
 [user]
-  name = Paul Miller
-  email = paul@paulmillr.com
-  signingkey = 46BEEF337A641ABB
-[commit]
-  gpgsign = true
+  name = woody
+  email = woody@triple-corp.com
+
 [github]
-  user = paulmillr
+  user = zprime0920
+
 [alias]
   discard = reset --hard HEAD
-  ch = checkout
   sign = commit -S -m
   signtag = 'tag -s -m ""'
-  d = diff
 
+  st = status
+  d = diff
+  dfs = diff --compact-summary
+
+  co = switch
+  sw = switch
+
+  br = branch
+  chp = cherry-pick
+  fa = fetch --all -p
+  pl = pull
+  pla = pull --all -pull
+  ps = push
+  psf = push -f
+
+  rb = rebase
+  rba = rebase --abort
+  rbc = rebase --continue
+  rbs = rebase --skip
+  rbe = rebase --edit-todo
+
+  s = show
+
+  rvt = revert
+  rh = reset --hard
+
+  lg = log
   graph = log --graph
   last = log -n 10
   whois = "!sh -c 'git log -i -1 --pretty=\"format:%an <%ae>\n\" --author=\"$1\"' -"
