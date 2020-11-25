@@ -1,6 +1,9 @@
 [user]
   name = woody
   email = woody@triple-corp.com
+	signingkey = 7B57ABD5CAE2118A
+#  name = giwan
+#  email = giwan.dev.gmail.com
 
 [github]
   user = zprime0920
@@ -48,7 +51,12 @@
   summary   = !zsh "$HOME/Developer/personal/dotfiles/git-extras/git-summary.sh"
   pr = "!f() { git fetch -fu ${2:-origin} refs/pull/$1/head:pr/$1; } ; f"
   cleanup = !ruby "$HOME/Developer/personal/dotfiles/git-extras/git-cleanup.rb"
-	sh = stash
+	sh = stash -u
+	cm = commit
+	cmf = commit --no-verify
+	shp = stash pop
+	ss = show --stat
+	sc = show -s --format=medium
 
 [push]
   default = simple
@@ -61,7 +69,7 @@
   excludesfile = ~/.gitignore
 
 [format]
-  pretty = %Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)%an%Creset %C(bold yellow)
+  pretty = %Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)%an%Creset
   graph = true
 
 [advice]
@@ -96,4 +104,6 @@
   new = green bold
   whitespace = red reverse
 [commit]
-  gpgsign = false
+	gpgsign = false
+[gpg]
+	program = /usr/local/bin/gpg
