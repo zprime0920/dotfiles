@@ -1,9 +1,9 @@
 [user]
   name = woody
   email = woody@triple-corp.com
-	signingkey = 7B57ABD5CAE2118A
+  signingkey = 7B57ABD5CAE2118A
 #  name = giwan
-#  email = giwan.dev.gmail.com
+#  email = giwan.dev@gmail.com
 
 [github]
   user = zprime0920
