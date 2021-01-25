@@ -107,3 +107,5 @@
 	gpgsign = false
 [gpg]
 	program = /usr/local/bin/gpg
+[rebase]
+	missingCommitsCheck = error
