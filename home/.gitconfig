@@ -56,6 +56,8 @@
 
   s   = !git show && git show --stat --format="%b"
 
+  cl = clone
+
 [push]
   default = simple
 
