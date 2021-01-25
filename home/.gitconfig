@@ -34,8 +34,6 @@
   rbs = rebase --skip
   rbe = rebase --edit-todo
 
-  s = show
-
   rvt = revert
   rh = reset --hard
 
@@ -55,8 +53,8 @@
 	cm = commit
 	cmf = commit --no-verify
 	shp = stash pop
-	ss = show --stat
-	sc = show -s --format=medium
+
+  s   = !git show && git show --stat --format="%b"
 
 [push]
   default = simple
