@@ -54,7 +54,8 @@
 	cmf = commit --no-verify
 	shp = stash pop
 
-  s   = !git show && git show --stat --format="%b"
+  s   = show
+  ss  = show --stat
 
   cl = clone
 
