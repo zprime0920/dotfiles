@@ -33,6 +33,7 @@
   rbc = rebase --continue
   rbs = rebase --skip
   rbe = rebase --edit-todo
+  rbi = rebase -i
 
   rvt = revert
   rh = reset --hard
