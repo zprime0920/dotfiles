@@ -1,6 +1,6 @@
 #!/bin/sh
 
-dev="$HOME"
+dev="$HOME/Developer"
 dotfiles="$dev/dotfiles"
 
 echo ""
@@ -25,8 +25,8 @@ for location in $(find home -name '.*'); do
   link "$dotfiles/$location" "$HOME/$file"
 done
 
-if [ `uname` == 'Darwin' ]; then
-  link "$dotfiles/vscode/settings.json" "$HOME/Library/Application Support/Code/User/settings.json"
-else
-  link "$dotfiles/vscode/settings.json" "$HOME/.vscode/settings.json"
-fi
+# if [ `uname` == 'Darwin' ]; then
+#   link "$dotfiles/vscode/settings.json" "$HOME/Library/Application Support/Code/User/settings.json"
+# else
+#   link "$dotfiles/vscode/settings.json" "$HOME/.vscode/settings.json"
+# fi
