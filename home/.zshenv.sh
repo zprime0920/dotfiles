@@ -38,7 +38,7 @@ typeset -gU cdpath fpath mailpath manpath path
 typeset -gUT INFOPATH infopath
 
 # Commonly used directories.
-dev="$HOME"
+dev="$HOME/Developer"
 com="$dev/com"
 pm="$dev"
 as="$HOME/Library/Application Support"
