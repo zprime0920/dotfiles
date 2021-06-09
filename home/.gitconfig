@@ -59,6 +59,7 @@
   ss  = show --stat
 
   cl = clone
+	override = commit --amend -a -C HEAD
 
 [push]
   default = simple
