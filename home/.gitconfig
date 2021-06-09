@@ -59,6 +59,7 @@
   ss  = show --stat
 
   cl = clone
+	nb = switch -c
 	override = commit --amend -a -C HEAD
 
 [push]
