@@ -113,3 +113,5 @@
 	program = /usr/local/bin/gpg
 [rebase]
 	missingCommitsCheck = error
+[init]
+	defaultBranch = main
